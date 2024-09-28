@@ -1,0 +1,57 @@
+.todo {
+  margin: -1.5rem auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+  
+  max-width: 46rem;
+  width: 100%;
+}
+
+.form {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+}
+
+.form > input {
+  background: var(--color-gray-500);
+  padding: 1rem;
+  border: solid 1px var(--color-gray-700);
+  color: var(--color-gray-300);
+  border-radius: 8px;
+  font-size: 1rem;
+
+  transition: border 0.1s;
+}
+
+.form > input:focus{
+  border: solid 1px var(--color-purple-dark);
+  color: var(--color-gray-100);
+}
+
+.form > button {
+  background: var(--color-blue-dark);
+  color: var(--color-gray-100);
+  border-radius: 8px;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  transition: background-color 0.1s;
+}
+
+.form > button:hover {
+  background: var(--color-blue);
+}

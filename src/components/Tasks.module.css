@@ -1,0 +1,133 @@
+.tasks {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.5rem;
+}
+
+.tasks > header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tasks > header div {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-weight: bold;
+}
+
+.taskTodo > .text {
+  color: var(--color-blue);
+}
+
+.taskDone > .text {
+  color: var(--color-purple);
+}
+
+.number {
+  color: var(--color-gray-200);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background: var(--color-gray-400);
+  line-height: 0.5rem;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.todo {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.75rem;
+  align-items: start;
+  justify-content: space-between;
+
+  background: var(--color-gray-500);
+  
+  border: solid 1px var(--color-gray-400);
+  border-radius: 8px;
+
+  padding: 1rem;
+  color: var(--color-gray-100);
+  font-weight: normal;
+}
+
+.circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: solid 2px var(--color-blue);
+  border-radius: 50%;
+  color: var(--color-blue);
+  cursor: pointer;
+
+  transition: background-color 0.1s;
+}
+
+.circle:hover {
+  background: var(--color-blue-dark);
+}
+
+.circleChecked {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--color-purple-dark);
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: background-color 0.1s;
+}
+
+.circleChecked:hover {
+  background: var(--color-purple);
+}
+
+.trash {
+  color: var(--color-gray-300);
+  cursor: pointer;
+  transition: background-color 0.1s, color 0.1s;
+}
+
+.trash:hover {
+  color: var(--color-red);
+  background: var(--color-gray-400);
+}
+
+.checked {
+  text-decoration: line-through;
+  color: var(--color-gray-300);
+}
+
+.nothing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 4rem;
+  border-radius: 8px;
+  border-top: solid 1px var(--color-gray-400);
+  color: var(--color-gray-300);
+}
+
+.nothing > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.nothing .title {
+  font-weight: bold;
+}
+
+.nothing .desc {
+  font-weight: normal;
+}
